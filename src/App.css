@@ -119,27 +119,25 @@ ul li:hover::after {
 }
 
 .mirror {
-  background-image: url("Rectangle 56.png");
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 30%;
+  margin-top: 25%;
   gap: 20px;
 }
 
 .mirror h2 {
-  color: white;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 50px;
   margin-left: -10px;
 }
 /*text */
-.none .mirror p {
-  align-items: center;
+.none p {
+  align-items: flex-end;
   font-size: 10px;
   font-weight: 500;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 /* image balise */
@@ -161,6 +159,7 @@ ul li:hover::after {
   display: block;
   width: 100%;
   border: 5px;
+  border-radius: 10px;
 }
 .hello:hover {
   transform: scale(1.3);
