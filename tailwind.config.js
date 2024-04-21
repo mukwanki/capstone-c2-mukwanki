@@ -3,9 +3,22 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "hero-pattern": "url('/img/hero-pattern.svg')",
-        "footer-texture": "url('/img/footer-texture.png')",
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        cursive: ["Pacifico", "cursive"],
+      },
+
+      colors: {
+        primary: "#789F72",
+        secondary: "#486B3E",
+        brandDark: "#364D2C",
+      },
+      container: {
+        center: true,
+        padding: {
+          default: "1rem",
+          sm: "2rem",
+        },
       },
     },
   },

@@ -1,13 +1,33 @@
 import "./App.css";
+import Navbar from "./components/navbar";
 import Home from "./components/home";
-import Profil from "./components/pages/profil";
-function App() {
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect } from "react";
+import Aos from "aos";
+import Service from "./components/service";
+import Banner from "./components/banner";
+import Footer from "./components/footer";
+
+const App = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 100,
+      duration: 700,
+      easing: "ease-in",
+      delay: 100,
+    });
+  });
   return (
     <>
-      <Home />
-      <Profil />
+      <div className="overflox-x-hidden">
+        <Navbar />
+        <Home />
+        <Service />
+        <Banner />
+        <Footer />
+      </div>
     </>
   );
-}
+};
 
 export default App;
