@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./components/navbar";
 import Home from "./components/home";
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
@@ -20,7 +19,6 @@ const App = () => {
   return (
     <>
       <div className="overflox-x-hidden">
-        <Navbar />
         <Home />
         <Service />
         <Banner />

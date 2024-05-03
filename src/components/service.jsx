@@ -16,7 +16,7 @@ function Service() {
         </div>
         {/*baniere image*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap3 place-items-center ">
-          <div className=" duration-200  group relative">
+          <div className=" duration-200 group relative">
             <img
               className="rounded-2xl bg-white hover:bg-primary mx-auto -translate-y-14 group-hover:scale-110 group-hover:rotate-6 duration-300"
               src={Cookie}

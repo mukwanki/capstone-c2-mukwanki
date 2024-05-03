@@ -1,29 +1,57 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Carte from "./components/pages/carte.jsx";
+import Decouvert from "./components/pages/decouvert.jsx";
 import Commande from "./components/pages/commande.jsx";
 import Profil from "./components/pages/profil.jsx";
+import Layout from "./components/layout.jsx";
+import App from "./App.jsx";
+import { Navigate } from "react-router-dom";
+import SignUp from "./components/formulaires/sign-up.jsx";
+import ProductDetail from "./components/decouvert/product-detail.jsx";
+import Details from "./components/decouvert/detailss.jsx";
+import Panier from "./components/pages/panier.jsx";
 
 const router = createBrowserRouter([
+  { path: "/", element: <Navigate to={"app"} replace /> },
   {
     path: "/",
-    element: <App />,
+    element: <Layout />,
     children: [
       {
-        path: "/carte",
-        element: <Carte />,
+        path: "/app",
+        element: <App />,
       },
       {
         path: "/commande",
         element: <Commande />,
       },
       {
+        path: "/decouvert",
+        element: <Decouvert />,
+      },
+      {
         path: "/profil",
         element: <Profil />,
+      },
+
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/panier",
+        element: <Panier />,
+      },
+      {
+        path: "/details",
+        element: <Details />,
+      },
+      {
+        path: "/product-detail",
+        element: <ProductDetail />,
       },
     ],
   },

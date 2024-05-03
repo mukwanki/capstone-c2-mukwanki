@@ -1,12 +1,15 @@
-function Commande() {
+import Restaurant from "../decouvert/page-commande.jsx";
+import Champagne from "../decouvert/page-commande2.jsx";
+import Ikos from "../decouvert/page-commande3.jsx";
+
+const Commande = () => {
   return (
     <div>
-      <p>Dans ton quartier</p>
-      <section>
-        <img src="" alt="" />
-      </section>
+      <Restaurant />
+      <Champagne />
+      <Ikos />
     </div>
   );
-}
+};
 
 export default Commande;
