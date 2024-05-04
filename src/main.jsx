@@ -13,6 +13,7 @@ import SignUp from "./components/formulaires/sign-up.jsx";
 import ProductDetail from "./components/decouvert/product-detail.jsx";
 import Details from "./components/decouvert/detailss.jsx";
 import Panier from "./components/pages/panier.jsx";
+import ProductsS from "./components/decouvert/productss.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Navigate to={"app"} replace /> },
@@ -29,10 +30,6 @@ const router = createBrowserRouter([
         element: <Commande />,
       },
       {
-        path: "/decouvert",
-        element: <Decouvert />,
-      },
-      {
         path: "/profil",
         element: <Profil />,
       },
@@ -41,14 +38,26 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp />,
       },
+
+      {
+        path: "/decouvert",
+        element: <Decouvert />,
+      },
+
       {
         path: "/panier",
         element: <Panier />,
       },
       {
-        path: "/details",
+        path: "/detailS",
         element: <Details />,
       },
+
+      {
+        path: "/productss",
+        element: <ProductsS />,
+      },
+
       {
         path: "/product-detail",
         element: <ProductDetail />,

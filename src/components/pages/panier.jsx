@@ -1,82 +1,21 @@
-import { TimesOneMobiledataRounded } from "@mui/icons-material";
-
-const Panier = () => {
+const Panier = (cart) => {
   return (
     <div className="container py-10">
-      <div className=" border-b border-gray-400 rounded-md">
-        <h3 className="text-3xl p-4 text-red-300 border-b border-gray-400 text-center">
-          Products
-        </h3>
-        <div className="grid p-5 ">
-          <div className="rounded-3xl bg-white flex items-center gap-6 p-8 relative">
-            <TimesOneMobiledataRounded className="absolute top-28 right-4 text-4xl cursor-pointer text-black hover:bg-green-900" />
-            <img className="h-60" src="src\components\image\boaf.jpg" alt="" />
-            <div className="">
-              <h3 className="text-black text-4xl">deliciouse food</h3>
-              <span className=" text-2xl text-green-500">quantity : </span>
-              <input
-                className="flex w-32 p-24 text-2xl text-black m-28"
-                type="number"
-                name=""
-                id=""
-                value="1"
-              />
-              <span className="text-green-200 text-3xl">price : </span>
-              <span>$40</span>
-            </div>
-          </div>
-
-          <div className="rounded-3xl bg-white flex items-center gap-6 p-8 relative">
-            <TimesOneMobiledataRounded className="absolute top-28 right-4 text-4xl cursor-pointer text-black hover:bg-green-900" />
-            <img className="h-32" src="src\components\image\boaf.jpg" alt="" />
-            <div className="">
-              <h3 className="text-black text-4xl">deliciouse food</h3>
-              <span className=" text-2xl text-green-500">quantity : </span>
-              <input
-                className="flex w-32 p-24 text-2xl text-black m-28"
-                type="number"
-                name=""
-                id=""
-                value="1"
-              />
-              <span className="text-green-200 text-3xl">price : </span>
-              <span>$40</span>
-            </div>
-          </div>
-
-          <div className="rounded-3xl bg-white flex items-center gap-6 p-8 relative">
-            <TimesOneMobiledataRounded className="absolute top-28 right-4 text-4xl cursor-pointer text-black hover:bg-green-900" />
-            <img className="h-32" src="src\components\image\boaf.jpg" alt="" />
-            <div className="">
-              <h3 className="text-black text-4xl">deliciouse food</h3>
-              <span className=" text-2xl text-green-50">quantity : </span>
-              <input
-                className="flex w-32 p-24 text-2xl text-black m-28"
-                type="number"
-                name=""
-                id=""
-                value="1"
-              />
-              <span className="text-green-200 text-3xl">price : </span>
-              <span>$40</span>
-            </div>
-          </div>
-
-          <div className="rounded-3xl bg-white flex items-center gap-6 p-8 relative">
-            <TimesOneMobiledataRounded className="absolute top-28 right-4 text-4xl cursor-pointer text-black hover:bg-green-900" />
-            <img className="h-32" src="src\components\image\boaf.jpg" alt="" />
-            <div className="">
-              <h3 className="text-black text-4xl">deliciouse food</h3>
-              <span className=" text-2xl text-green-50">quantity : </span>
-              <input
-                className="flex w-32 p-24 text-2xl text-black m-28"
-                type="number"
-                name=""
-                id=""
-                value="1"
-              />
-              <span>$40</span>
-            </div>
+      <div className="bg-gray-100 min-h-screen">
+        <div className="container mx-auto px-4 py-8">
+          <div className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Panier</h2>
+            <ul>
+              {cart.map((item) => (
+                <li
+                  key={item.id}
+                  className="flex justify-between items-center mb-2"
+                >
+                  <span>{item.name}</span>
+                  <span>{item.price * item.quantity}</span>{" "}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

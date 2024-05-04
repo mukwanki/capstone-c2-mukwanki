@@ -1,11 +1,11 @@
 import React from "react";
-import { Phone, StarOutline } from "@mui/icons-material";
+import { StarOutline } from "@mui/icons-material";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import ProductsS from "./productss.js";
+import ProductsS from "./productss";
 
 const Details = () => {
   const [value, setValue] = React.useState("1");
@@ -48,59 +48,30 @@ const Details = () => {
           <div className="flex justify-start items-center">
             <address>Batetela 67, commune de la gombe</address>
           </div>
-          <section className="flex justify-start items-start">
-            <Box sx={{ width: "100%", typography: "body1" }}>
-              <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-                  <TabList
-                    onChange={handleChange}
-                    aria-label="lab API tabs example"
-                  >
-                    <Tab label="Afficher tout" value="1" />
-                    <Tab label="Repas" value="2" />
-                  </TabList>
-                </Box>
-                <TabPanel value="1">
-                  <p className="font-bold text-lg py-10">
-                    A propos du restaurant la champagne
-                  </p>
-                  <div className="flex  items-center text-center">
-                    <p>
-                      Ils proposent des plats délicieux et créatifs préparés à
-                      partir dingrédients récupérés ou de surplus alimentaires
-                    </p>
-                  </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap3 place-items-center">
-                    <div className="flex justify-start items-start relative">
-                      <StarOutline />
-                      <StarOutline />
-                      <StarOutline />
-                      <StarOutline />
-                      <h2 className="">
-                        4,3- <span>260 avis</span>
-                      </h2>
-                    </div>
-                  </div>
-                  <address className="flex justify-start items-center">
-                    Batetela 67, commune de la gombe
-                  </address>
-                  <div className="flex justify-start items-center">
-                    <p>+243 81 376 5435</p>
-                  </div>
-
-                  <div className="flex justify-end items-end">
-                    <Phone />
-                  </div>
-                </TabPanel>
-                <TabPanel value="2">
-                  <div className="container">
-                    <ProductsS />
-                  </div>
-                </TabPanel>
-              </TabContext>
-            </Box>
-          </section>
+          <Box sx={{ width: "100%", typography: "body1" }}>
+            <TabContext value={value}>
+              <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                <TabList
+                  onChange={handleChange}
+                  aria-label="lab API tabs example"
+                >
+                  <Tab label="Afficher tout" value="1" />
+                  <Tab label="Repas" value="2" />
+                </TabList>
+              </Box>
+              <TabPanel value="1">
+                <div className="container">
+                  <ProductsS />
+                </div>
+              </TabPanel>
+              <TabPanel value="2">
+                <div className="container">
+                  <ProductsS />
+                </div>
+              </TabPanel>
+            </TabContext>
+          </Box>
         </section>
       </div>
     </div>

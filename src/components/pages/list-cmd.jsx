@@ -1,67 +1,63 @@
 import { useState } from "react";
 import products from "../models/product";
+
 function List() {
   const [searchTerm, setSearchTerm] = useState("");
-  return (
-    <>
-      <div className="py-10 ">
-        <div className="container">
-          <div className="w-11/12 h-auto p-0 pb-8 ">
-            <div className="flex px-12 justify-between py-10">
-              <h1 className="inline-block tracking-wide border-b-2 border-solid border-green-500 pb-4 text-4xl font-bold">
-                Decouvert
-              </h1>
-              <input
-                className=" w-3/5 px-2 pr-4 bg-transparent border border-gray-800 text-xl capitalize outline-none tracking-wide font-medium text-green-500"
-                id="searchInput"
-                type="text"
-                placeholder="search here......."
-                onChange={(event) => {
-                  setSearchTerm(event.target.value);
-                }}
-              />
-            </div>
 
-            <div className="flex justify-between flex-wrap text-left">
-              {products
-                .filter((val) => {
-                  if (searchTerm == "") {
-                    return val;
-                  } else if (
-                    val.Tittle.toLowerCase().includes(
-                      searchTerm.toLocaleLowerCase()
-                    )
-                  ) {
-                    return val;
-                  }
-                })
-                .map((val) => {
-                  return (
-                    <div
-                      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center  "
-                      key={val.id}
-                    >
-                      <div className="relative">
-                        <img
-                          className="flex max-w-full rounded-2xl object-contain h-full mx-auto"
-                          src={val.image}
-                          alt=""
-                        />
-                        <h3 className=" pt-2 text-2xl font-normal">
-                          {val.Tittle}
-                        </h3>
-                        <p className="px-1 py-0 font-medium  ">
-                          {val.Description}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-            </div>
+  return (
+    <div className="py-10">
+      <div className="container">
+        <div className="w-11/12 h-auto p-0 pb-8">
+          <div className="flex flex-wrap justify-between px-12 py-10">
+            <h1 className="inline-block tracking-wide border-b-2 border-solid border-green-500 pb-4 text-4xl font-bold">
+              Decouvert
+            </h1>
+            <input
+              className="w-3/5 px-2 pr-4 bg-transparent border border-gray-800 text-xl capitalize outline-none tracking-wide font-medium text-green-500"
+              id="searchInput"
+              type="text"
+              placeholder="search here......."
+              onChange={(event) => {
+                setSearchTerm(event.target.value);
+              }}
+            />
+          </div>
+
+          <div className="flex flex-wrap justify-between">
+            {products
+              .filter((val) => {
+                if (searchTerm === "") {
+                  return val;
+                } else if (
+                  val.Tittle.toLowerCase().includes(
+                    searchTerm.toLocaleLowerCase()
+                  )
+                ) {
+                  return val;
+                }
+              })
+              .map((val) => (
+                <div
+                  key={val.id}
+                  className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 flex flex-col items-center"
+                >
+                  <div className="rounded-lg overflow-hidden mb-4">
+                    <img
+                      className="object-cover w-full max-w-full"
+                      src={val.image}
+                      alt=""
+                    />
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold mb-2">{val.Tittle}</h3>
+                    <p className="font-medium">{val.Description}</p>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

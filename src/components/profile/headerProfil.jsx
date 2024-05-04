@@ -49,7 +49,6 @@ const ProfilHeader = () => {
                       aria-label="lab API tabs example"
                     >
                       <Tab label="Commandes" value="1" />
-                      <Tab label="lol" value="2" />
                     </TabList>
                   </Box>
                   <TabPanel value="1">
@@ -60,7 +59,6 @@ const ProfilHeader = () => {
                       <p>Tu trouveras tes commandes par ici.</p>
                     </div>
                   </TabPanel>
-                  <TabPanel value="2">Item Two</TabPanel>
                 </TabContext>
               </Box>
             </div>
