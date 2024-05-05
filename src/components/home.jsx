@@ -26,7 +26,7 @@ function Home() {
               <h1>Miam</h1>
             </div>
             <div className="bg-gradient-to-r from-primary to-secondary absolute bottom-10 right-10 p-3 rounded-xl">
-              <h1>It delicieuse</h1>
+              <h1>It delicious</h1>
             </div>
           </div>
         </div>

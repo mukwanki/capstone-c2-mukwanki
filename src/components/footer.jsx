@@ -8,16 +8,20 @@ const FooterLink = [
     link: "/#accueil",
   },
   {
-    title: "Carte",
-    link: "/#carte",
-  },
-  {
     title: "Commande",
     link: "/#commande",
   },
   {
+    title: "Decouvert",
+    link: "/#decouvert",
+  },
+  {
     title: "Profil",
     link: "/#profil",
+  },
+  {
+    title: "Sign-up",
+    link: "/#signup",
   },
 ];
 
@@ -42,7 +46,7 @@ const Footer = () => {
             <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10 ">
               <div className="py-8 px-4">
                 <h1 className="text-xl font-semibold sm:text-left mb-3">
-                  footer links
+                  Company
                 </h1>
                 <ul className="space-y-3">
                   {FooterLink.map((data, index) => (
@@ -58,7 +62,7 @@ const Footer = () => {
 
               <div className="py-8 px-4">
                 <h1 className="text-xl font-semibold sm:text-left mb-3">
-                  Quick links
+                  Service
                 </h1>
                 <ul className="space-y-3">
                   {FooterLink.map((data, index) => (

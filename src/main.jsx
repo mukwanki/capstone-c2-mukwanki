@@ -12,7 +12,6 @@ import { Navigate } from "react-router-dom";
 import SignUp from "./components/formulaires/sign-up.jsx";
 import ProductDetail from "./components/decouvert/product-detail.jsx";
 import Details from "./components/decouvert/detailss.jsx";
-import Panier from "./components/pages/panier.jsx";
 import ProductsS from "./components/decouvert/productss.jsx";
 
 const router = createBrowserRouter([
@@ -44,10 +43,6 @@ const router = createBrowserRouter([
         element: <Decouvert />,
       },
 
-      {
-        path: "/panier",
-        element: <Panier />,
-      },
       {
         path: "/detailS",
         element: <Details />,

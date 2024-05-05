@@ -2,7 +2,7 @@
 import React from "react";
 import Logo from "./image/logo.png";
 import { NavLink } from "react-router-dom";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function Navbar() {
@@ -52,11 +52,6 @@ function Navbar() {
                 <button className="sm:flex items-center gap-4 inline-block text-xl py-4 px-4 text-white/70 hover:text-white duration-200 ">
                   {" "}
                   <AccountCircleIcon />
-                </button>
-              </NavLink>
-              <NavLink to="/panier">
-                <button className="sm:flex items-center gap-4 inline-block text-xl py-4 px-4 text-white/70 hover:text-white duration-200 ">
-                  <ShoppingCartIcon />
                 </button>
               </NavLink>
             </div>
