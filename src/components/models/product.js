@@ -2,14 +2,14 @@ const products = [
   {
     id: "1",
     Tittle: "Restaurant au coeur de kinshasa",
-    image: "src/components/image/boaf.jpg",
+    image: "./components/image/boaf.jpg",
     Description:
       "Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.",
   },
   {
     id: "2",
     Tittle: "Restaurant malamu",
-    image: "src/components/image/cooookie.jpg",
+    image: "./components/image/cooookie.jpg",
     Description:
       "Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.",
   },
