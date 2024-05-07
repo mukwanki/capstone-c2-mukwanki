@@ -1,6 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
+import SamouImg from "../image/samouuu.jpg";
+import BoafImg from "../image/boaf.jpg";
+import CookImg from "../image/cooookie.jpg";
+import FriteImg from "../image/frite.jpg";
+import ViandeImg from "../image/viande.png";
 
 const ProductsS = (produit) => {
   return (
@@ -16,7 +21,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\samouuu.jpg&description=Samoussa&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\samouuu.jpg"
+              src={SamouImg}
               alt="photo"
               id={produit}
             />
@@ -28,7 +33,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\boaf.jpg&description=Boaf&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\boaf.jpg"
+              src={BoafImg}
               alt="photo"
               id={produit}
             />
@@ -40,7 +45,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&Cookie&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />
@@ -52,7 +57,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=>&Cookie&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />
@@ -64,7 +69,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=&Cookie&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />
@@ -76,7 +81,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=Cookie.&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />
@@ -88,7 +93,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=cookie&price=$90">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />
@@ -100,7 +105,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=cookie&price=$40">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />
@@ -112,7 +117,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\frite.jpg&description=frite&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\frite.jpg"
+              src={FriteImg}
               alt="photo"
               id={produit}
             />
@@ -124,7 +129,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\viande.png&description=viande&price=$45">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\viande.png"
+              src={ViandeImg}
               alt="photo"
               id={produit}
             />
@@ -136,7 +141,7 @@ const ProductsS = (produit) => {
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=cookie&price=$24">
             <img
               className="w-full h-[250px] object-cover cursor-pointer"
-              src="src\components\image\cooookie.jpg"
+              src={CookImg}
               alt="photo"
               id={produit}
             />

@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { AiOutlineArrowLeft, AiOutlineRight } from "react-icons/ai";
+import SteackImg from "src/components/image/steack.png";
+import CookieImg from "src/components/image/cooookie.jpg";
 
 const TopProduct = () => {
   return (
@@ -11,7 +13,7 @@ const TopProduct = () => {
             <div className=" w-36 h-36">
               <img
                 className="w-full h-full object-cover rounded-xl"
-                src="src\components\image\steack.png"
+                src={SteackImg}
                 alt=""
               />
             </div>
@@ -21,7 +23,7 @@ const TopProduct = () => {
             <div className=" w-36 h-36">
               <img
                 className="w-full h-full object-cover rounded-xl"
-                src="src\components\image\steack.png"
+                src={SteackImg}
                 alt=""
               />
             </div>
@@ -31,7 +33,7 @@ const TopProduct = () => {
             <div className=" w-36 h-36">
               <img
                 className="w-full h-full object-cover rounded-xl"
-                src="src\components\image\steack.png"
+                src={SteackImg}
                 alt=""
               />
             </div>
@@ -41,7 +43,7 @@ const TopProduct = () => {
             <div className=" w-36 h-36">
               <img
                 className="w-full h-full object-cover rounded-xl"
-                src="src\components\image\steack.png"
+                src={SteackImg}
                 alt=""
               />
             </div>
@@ -51,7 +53,7 @@ const TopProduct = () => {
             <div className=" w-36 h-36">
               <img
                 className="w-full h-full object-cover rounded-xl"
-                src="src\components\image\steack.png"
+                src={SteackImg}
                 alt=""
               />
             </div>
@@ -61,7 +63,7 @@ const TopProduct = () => {
             <div className=" w-36 h-36">
               <img
                 className="w-full h-full object-cover rounded-xl"
-                src="src\components\image\steack.png"
+                src={SteackImg}
                 alt=""
               />
             </div>
@@ -81,30 +83,18 @@ const TopProduct = () => {
         <div className="row-span-2 col-span-2">
           <img
             className="w-full h-full object-cover"
-            src="src\components\image\cooookie.jpg"
+            src="src/components/image/cooookie.jpg"
             alt=""
           />
         </div>
         <div className="col-span-1 row-span-1">
-          <img
-            className="w-full h-full object-cover"
-            src="src\components\image\cooookie.jpg"
-            alt=""
-          />
+          <img className="w-full h-full object-cover" src={CookieImg} alt="" />
         </div>
         <div className="col-span-1 row-span-1">
-          <img
-            className="w-full h-full object-cover"
-            src="src\components\image\cooookie.jpg"
-            alt=""
-          />
+          <img className="w-full h-full object-cover" src={CookieImg} alt="" />
         </div>
         <div className="col-span-2">
-          <img
-            className="w-full h-full object-cover"
-            src="src\components\image\cooookie.jpg"
-            alt=""
-          />
+          <img className="w-full h-full object-cover" src={CookieImg} alt="" />
         </div>
       </div>
     </>

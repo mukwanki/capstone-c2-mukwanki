@@ -4,6 +4,8 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import RectaImg from "../image/Rectangle 80.png";
+import LipsImg from "../image/Ellipse 15.png";
 
 const ProfilHeader = () => {
   const [value, setValue] = React.useState("1");
@@ -19,7 +21,7 @@ const ProfilHeader = () => {
           <div>
             <img
               className="max-w-full max-h-full flex items-center "
-              src="src\components\image\Rectangle 80.png"
+              src={RectaImg}
               alt="photo"
             />
           </div>
@@ -27,7 +29,7 @@ const ProfilHeader = () => {
             <div className="">
               <img
                 className=" rounded-full border-solid border-white transform -translate-y-24 w-40 h-40 "
-                src="src\components\image\Ellipse 15.png"
+                src={LipsImg}
                 alt="bradley ortiz"
               />
               <h1 className="mb-3 text-4xl font-semibold ">peter mayamba</h1>
@@ -37,7 +39,7 @@ const ProfilHeader = () => {
               </div>
               <div className="flex items-center ">
                 <p className="mr-2"> 0 fc</p>
-                <span className="font-semibold text-xl ">economises</span>
+                <span className="font-semibold text-xl ">économises</span>
               </div>
             </div>
             <div className="space-y-6 items-center p-3  ">

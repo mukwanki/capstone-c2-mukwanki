@@ -6,7 +6,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import ProductsS from "./productss";
-
+import ElipsImg from "../image/Ellipse 15.png";
 const Details = () => {
   const [value, setValue] = React.useState("1");
 
@@ -27,7 +27,7 @@ const Details = () => {
           <div className="">
             <img
               className=" rounded-full border-solid border-white transform -translate-y-24 w-40 h-40 "
-              src="src\components\image\Ellipse 15.png"
+              src={ElipsImg}
               alt="photo"
             />
           </div>
