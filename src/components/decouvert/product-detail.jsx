@@ -15,7 +15,7 @@ const ProductDetail = () => {
     const newItem = {
       id: cart.length + 1,
       name: description,
-      price: 10.99,
+      price: 40,
       quantity: quantity, // Ajoute la quantité à l'objet d'article
     };
     setCart([...cart, newItem]);
@@ -39,7 +39,7 @@ const ProductDetail = () => {
                 <img
                   src={DeboImg}
                   alt="Nom du produit"
-                  className="rounded-lg mb-4 inline-block max-w-full h-auto mx-auto"
+                  className="rounded-lg mb-4 inline-block max-w-full h-auto mx-auto" // Redimensionnement de l'image et centrage horizontal
                 />
               </div>
               <div className="w-full md:w-1/2 md:text-center">
