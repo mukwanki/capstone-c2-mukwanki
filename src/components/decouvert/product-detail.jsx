@@ -39,7 +39,7 @@ const ProductDetail = () => {
                 <img
                   src={DeboImg}
                   alt="Nom du produit"
-                  className="rounded-lg mb-4 inline-block max-w-full h-auto mx-auto" // Redimensionnement de l'image et centrage horizontal
+                  className="rounded-lg mb-4 inline-block max-w-full h-auto mx-auto"
                 />
               </div>
               <div className="w-full md:w-1/2 md:text-center">
