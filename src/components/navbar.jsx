@@ -3,8 +3,6 @@ import React from "react";
 import Logo from "./image/logo.png";
 import { NavLink } from "react-router-dom";
 
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-
 function Navbar() {
   return (
     <>
@@ -49,9 +47,14 @@ function Navbar() {
                 Profil
               </NavLink>
               <NavLink to="/signup">
-                <button className="sm:flex items-center gap-4 inline-block text-xl py-4 px-4 text-white/70 hover:text-white duration-200 ">
-                  {" "}
-                  <AccountCircleIcon />
+                <button className="sm:flex items-center gap-4 inline-block text-sm py-2 px-3 bg-transparent border border-white text-white/70 hover:bg-white hover:text-primary transition duration-200 rounded">
+                  Inscription
+                </button>
+              </NavLink>
+
+              <NavLink to="/connexion">
+                <button className="sm:flex items-center gap-4 inline-block text-sm py-2 px-3 bg-transparent border border-white text-white/70 hover:bg-white hover:text-primary transition duration-200 rounded ">
+                  Connexion
                 </button>
               </NavLink>
             </div>

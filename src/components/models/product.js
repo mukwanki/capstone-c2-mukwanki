@@ -2,20 +2,20 @@ const products = [
   {
     id: "1",
     Tittle: "Restaurant au coeur de kinshasa",
-    image: "./components/image/boaf.jpg",
+    image: "src/components/image/boaf.jpg",
     Description:
       "Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.",
   },
   {
     id: "2",
     Tittle: "Restaurant malamu",
-    image: "./components/image/cooookie.jpg",
+    image: "src/components/image/cooookie.jpg",
     Description:
       "Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.",
   },
   {
     id: "3",
-    Tittle: "ikos",
+    Tittle: "Ikos",
     image: "src/components/image/frite.jpg",
     Description:
       "Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.",
@@ -50,7 +50,7 @@ const products = [
   },
   {
     id: "8 ",
-    Tittle: " market palace",
+    Tittle: " Market palace",
     image: " src/components/image/boaf.jpg",
     Description:
       "Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.  ",
@@ -71,7 +71,7 @@ const products = [
   },
   {
     id: "11 ",
-    Tittle: " the food",
+    Tittle: " The food",
     image: " src/components/image/boaf.jpg",
     Description:
       " Food Récup travaille en partenariat avec une variété de restaurants engagés dans la lutte contre le gaspillage alimentaire.",

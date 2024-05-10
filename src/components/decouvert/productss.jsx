@@ -16,138 +16,138 @@ const ProductsS = (produit) => {
           Filtre
         </button>
       </div>
-      <div className="products grid justify-items-center grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-col-5">
-        <div className="product space-y-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className=" space-y-2">
           <Link to="/product-detail?image=src\components\image\samouuu.jpg&description=Samoussa&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={SamouImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Samoussa</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Samoussa</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className=" space-y-2">
           <Link to="/product-detail?image=src\components\image\boaf.jpg&description=Boaf&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={BoafImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Boaf</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Boaf</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=Cookie&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Cookie</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src\components\image\cooookie.jpg&description=&Cookie&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie au lait</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Cookie au lait</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
-          <Link to="/product-detail?image=src/components/image/cooookie.jpg&description=&Cookie&price=$45">
+        <div className="space-y-2">
+          <Link to="/product-detail?image=src\components/image/cooookie.jpg&description=&Cookie&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie au miel</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Cookie au miel</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src/components/image/cooookie.jpg&description=Cookie.&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie miel sucre</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Cookie miel sucre</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src/components/image/cooookie.jpg&description=cookie&price=$90">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie</h1>
-          <p className="font fold">$90</p>
+          <h1 className="text-xl text-center">Cookie</h1>
+          <p className="font fold text-center">$90</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src/components/image/cooookie.jpg&description=cookie&price=$40">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie</h1>
-          <p className="font fold">$40</p>
+          <h1 className="text-xl text-center">Cookie</h1>
+          <p className="font fold text-center">$40</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src/components/image/frite.jpg&description=frite&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={FriteImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Frite au ketchup</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Frite au ketchup</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src/components/image/viande.png&description=viande&price=$45">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={ViandeImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Viande</h1>
-          <p className="font fold">$45</p>
+          <h1 className="text-xl text-center">Viande</h1>
+          <p className="font fold text-center">$45</p>
         </div>
-        <div className="product space-y-2">
+        <div className="space-y-2">
           <Link to="/product-detail?image=src/components/image/cooookie.jpg&description=cookie&price=$24">
             <img
-              className="w-full h-[250px] object-cover cursor-pointer"
+              className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={CookImg}
               alt="photo"
               id={produit}
             />
           </Link>
-          <h1 className="text-xl">Cookie</h1>
-          <p className="font fold">$24</p>
+          <h1 className="text-xl text-center">Cookie</h1>
+          <p className="font fold text-center">$24</p>
         </div>
       </div>
     </div>

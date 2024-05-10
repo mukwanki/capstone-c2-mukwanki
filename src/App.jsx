@@ -16,6 +16,7 @@ const App = () => {
       delay: 100,
     });
   });
+
   return (
     <>
       <div className="overflox-x-hidden">

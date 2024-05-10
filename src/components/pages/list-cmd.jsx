@@ -39,18 +39,22 @@ function List() {
               .map((val) => (
                 <div
                   key={val.id}
-                  className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 flex flex-col items-center rounded shadow-md "
+                  className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 flex flex-col items-center rounded shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
                 >
-                  <div className="rounded-lg overflow-hidden mb-4 ">
+                  <div className="rounded-lg overflow-hidden mb-4">
                     <img
-                      className="object-cover w-full max-w-full"
+                      className="object-cover w-full max-w-full transition duration-300 ease-in-out transform hover:scale-110"
                       src={val.image}
                       alt=""
                     />
                   </div>
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-2">{val.Tittle}</h3>
-                    <p className="font-medium">{val.Description}</p>
+                    <h3 className="text-2xl font-bold mb-2 transition duration-300 ease-in-out hover:text-green-500">
+                      {val.Tittle}
+                    </h3>
+                    <p className="font-medium transition duration-300 ease-in-out hover:text-green-500">
+                      {val.Description}
+                    </p>
                   </div>
                 </div>
               ))}

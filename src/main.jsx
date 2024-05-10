@@ -13,6 +13,7 @@ import SignUp from "./components/formulaires/sign-up.jsx";
 import ProductDetail from "./components/decouvert/product-detail.jsx";
 import Details from "./components/decouvert/detailss.jsx";
 import ProductsS from "./components/decouvert/productss.jsx";
+import Connexion from "./components/formulaires/connexion.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Navigate to={"app"} replace /> },
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/connexion",
+        element: <Connexion />,
       },
 
       {
