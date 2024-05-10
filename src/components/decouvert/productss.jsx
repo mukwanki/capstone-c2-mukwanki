@@ -5,7 +5,7 @@ import SamouImg from "../image/samouuu.jpg";
 import BoafImg from "../image/boaf.jpg";
 import CookImg from "../image/cooookie.jpg";
 import FriteImg from "../image/frite.jpg";
-import ViandeImg from "../image/viande.png";
+import ViandeImg from "../image/tilapia.jpg";
 
 const ProductsS = (produit) => {
   return (
@@ -126,7 +126,7 @@ const ProductsS = (produit) => {
           <p className="font fold text-center">$45</p>
         </div>
         <div className="space-y-2">
-          <Link to="/product-detail?image=src/components/image/viande.png&description=viande&price=$45">
+          <Link to="/product-detail?image=src/components/image/tilapia.jpg&description=tilapia&price=$45">
             <img
               className="w-full h-64 object-cover cursor-pointer transition duration-300 transform hover:scale-105"
               src={ViandeImg}
@@ -134,7 +134,7 @@ const ProductsS = (produit) => {
               id={produit}
             />
           </Link>
-          <h1 className="text-xl text-center">Viande</h1>
+          <h1 className="text-xl text-center">Tilapia </h1>
           <p className="font fold text-center">$45</p>
         </div>
         <div className="space-y-2">
